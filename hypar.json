@@ -1,0 +1,50 @@
+{
+  "$schema": "https://hypar.io/Schemas/Function.json",
+  "id": "7c58d3c7-a98c-4070-8448-7c2147caaa37",
+  "name": "SVG Element Test",
+  "description": "The SVGElementTest function.",
+  "language": "C#",
+  "input_schema": {
+    "type": "object",
+    "properties": {
+      "SVG File": {
+        "description": "Upload an SVG file",
+        "type": "object",
+        "$ref": "https://hypar.io/Schemas/InputData.json",
+        "$hyparFileTypes": [
+          "svg"
+        ]
+      },
+      "Width": {
+        "type": "number",
+        "minimum": 0,
+        "maximum": 10
+      },
+      "Length": {
+        "type": "number",
+        "minimum": 0,
+        "maximum": 10
+      },
+      "Stroke Width": {
+        "type": "number",
+        "minimum": 0,
+        "maximum": 1,
+        "multipleOf": 0.01
+      }
+    }
+  },
+  "outputs": [
+    {
+      "unit_type": "volume",
+      "name": "Volume",
+      "description": "The volume.",
+      "type": "number"
+    }
+  ],
+  "repository_url": "https://github.com/hypar-io/function",
+  "source_file_key": null,
+  "preview_image": null,
+  "element_types": [
+    "https://prod-api.hypar.io/schemas/SVGGraphic"
+  ]
+}

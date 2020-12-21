@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <ItemGroup>
+    <ProjectReference Include="..\dependencies\SVGElementTest.Dependencies.csproj" />
+    <ProjectReference Include="..\..\Elements.SVG\elements.svg\Elements.SVG.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Hypar.Elements" Version="0.8.0" />
+    <PackageReference Include="Hypar.Functions" Version="0.8.0" />
+    <PackageReference Include="Svg" Version="3.1.1" />
+  </ItemGroup>
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+</Project>
